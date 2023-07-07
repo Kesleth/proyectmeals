@@ -32,3 +32,5 @@ router
   .route('/:id')
   .patch(authMiddleware.protectAccountOwner, userController.updateAUser)
   .delete(authMiddleware.protectAccountOwner, userController.deleteAUser);
+
+module.exports = router;
